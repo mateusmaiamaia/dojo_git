@@ -44,8 +44,7 @@
   ```$ git pull --rebase origin <nome_da_branch>```
 
 # Dojo de Git
-Dojo de git do grupo 1 da disciplina de EPS.
-
+Dojo de git do grupo do Livro Livre da disciplina de EPS.
 
 ## Criando a sua chave ssh
 
