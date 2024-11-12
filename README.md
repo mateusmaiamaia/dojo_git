@@ -46,10 +46,46 @@
 # Dojo de Git
 Dojo de git do grupo 1 da disciplina de EPS.
 
+
+## Criando a sua chave ssh
+
+### 1. Gerando a sua chave SSH
+
+No seu terminal use o comando:
+
+``` ssh-keygen -t rsa -b 4096 -C "seu-email@exemplo.com"```
+
+### 2. Adicionando a sua chave SSH RSA ao ssh-agent
+
+Abra um novo terminal e utilize esse comando:
+
+```eval "$(ssh-agent -s)"```
+
+Em seguida esse comando:
+
+```ssh-add ~/.ssh/id_rsa```
+
+### 3. Adicionar a sua chave SSH ao GitHub
+
+Em um terminal copie a chave SSH pública para a área de transferência, usando esse comando:
+
+```cat .ssh/id_rsa.pub```
+
+No GitHUb acesse 
+- Acesse Settings > SSH and GPG keys.
+- Clique em New SSH Key.
+- Cole a chave pública copiada no campo e salve.
+
+### 4. Testar a conexão SSH
+
+Para verificar se a chave SSH está funcionando, execute:
+
+``` ssh -T git@github.com  ``` 
+
 ## Passos a serem executados
+
 ### 1. Clone
-Clonem esse repositório para suas máquinas.  
-```$ git clone https://github.com/mateusmaiamaia/dojo_git.git``
+Clonem esse repositório para suas máquinas utilizando o ssh.  
 
 ### 2. Branches
 
